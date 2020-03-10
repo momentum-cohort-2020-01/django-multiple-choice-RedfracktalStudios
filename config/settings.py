@@ -132,6 +132,7 @@ STATICFILES_DIRS = [
 
 AUTH_USER_MODEL = 'users.User'
 
+
 # Debug toolbar config
 
 INTERNAL_IPS = [
