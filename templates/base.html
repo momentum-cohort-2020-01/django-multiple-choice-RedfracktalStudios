@@ -4,7 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <title>{% block page_title %}{% endblock %}</title>
+
+  {% loadbootstrap3 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+
+  <!-- first load django static tag -->
+  {% load staticfiles %}
+
+  <script src='{% static %}'></script>
+
+
 </head>
 
 <body>

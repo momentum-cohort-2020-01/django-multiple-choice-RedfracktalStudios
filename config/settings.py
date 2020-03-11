@@ -37,8 +37,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'registration',
     'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -125,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR / 'static'),
 ]
 
 # Custom user model
@@ -140,3 +142,6 @@ INTERNAL_IPS = [
     '127.0.0.1',
     # ...
 ]
+
+REGISTRATION_AUTO_LOGIN = True  # Automatically log the user in.
+ACCOUNT_ACTIVATION_DAYS = 7
