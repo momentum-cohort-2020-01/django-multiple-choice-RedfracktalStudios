@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from django.views.decorators.http import require_GET
 
-# Create your views here.
+def registeruser(request):
+  return render(request, 'flashcard/registeruser.html')
