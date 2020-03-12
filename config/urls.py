@@ -20,7 +20,11 @@ from flashcard import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('registration.backends.default.urls'))
+    path('accounts/', include('registration.backends.default.urls')),
+    path('', views.home, name='home'),
+
+
+
 
 
 ]
