@@ -22,6 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('registration.backends.default.urls')),
     path('', views.home, name='home'),
+    path('one/', views.one, name='one'),
+    path('two/', views.two, name='two'),
+    path('three/', views.three, name='three'),
+
 
 
 
