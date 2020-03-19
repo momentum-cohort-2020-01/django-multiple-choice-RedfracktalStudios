@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+}
+
+nav{
+  background: blue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.homepage-container{
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.homepage-banner{
+  text-align: center;
+  color: blue;
+  font-size: 1.25em;
+  max-width: 100%;
+}
+
+.button{
+  background-color: blue;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+}
