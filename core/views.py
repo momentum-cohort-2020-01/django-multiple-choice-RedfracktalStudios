@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Deck
 
 
 def home(request):
@@ -9,5 +9,6 @@ def home(request):
 
 
 def flashcards(request):
-    context = {}
+    qs = Deck.objects.all()
+    context = {'decks': qs}
     return render(request, 'core/flashcards.html', context)
